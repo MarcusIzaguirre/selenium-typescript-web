@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-21T15:04:39.389Z",
+    "end": "2024-11-21T15:04:45.716Z",
+    "duration": 6327,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fec1efb6-e154-42ef-b407-c135e350b40f",
+      "title": "",
+      "fullFile": "C:\\Selenium-Typescript-Web\\src\\tests\\formTest.spec.ts",
+      "file": "\\src\\tests\\formTest.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "34f4bce6-2209-40d3-b237-c70dde9ef29f",
+          "title": "Automation Practice Form",
+          "fullFile": "C:\\Selenium-Typescript-Web\\src\\tests\\formTest.spec.ts",
+          "file": "\\src\\tests\\formTest.spec.ts",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Automation Practice Form\"",
+              "fullTitle": "Automation Practice Form \"before each\" hook in \"Automation Practice Form\"",
+              "timedOut": false,
+              "duration": 5342,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    driver = yield browserSetup_1.SetupPage.setupDemoQA();\n    utilsForm = new utilsForm_1.UtilsForm(driver);\n    console.log(\"Navigating to the URL...\");\n});",
+              "err": {},
+              "uuid": "8570ba12-bf25-497d-9acf-57b1fe2ca509",
+              "parentUUID": "34f4bce6-2209-40d3-b237-c70dde9ef29f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Automation Practice Form\"",
+              "fullTitle": "Automation Practice Form \"after each\" hook in \"Automation Practice Form\"",
+              "timedOut": false,
+              "duration": 59,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    console.log(\"Closing the browser...\");\n    yield browserSetup_1.SetupPage.closeBrowser();\n});",
+              "err": {},
+              "uuid": "0095df55-684f-49e2-b738-b7a995a81467",
+              "parentUUID": "34f4bce6-2209-40d3-b237-c70dde9ef29f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Scenario 01 - It should submit the form successfully",
+              "fullTitle": "Automation Practice Form Scenario 01 - It should submit the form successfully",
+              "timedOut": false,
+              "duration": 918,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "return __awaiter(this, void 0, void 0, function* () {\n    console.log(\"Filling the form...\");\n    yield utilsForm.fillRequiredFields();\n    console.log(\"Submitting the form...\");\n    yield utilsForm.submitForm();\n    yield utilsForm.validateSubmitSuccessfully();\n});",
+              "err": {},
+              "uuid": "04d335f5-3b07-4816-87f8-852f974b6ebb",
+              "parentUUID": "34f4bce6-2209-40d3-b237-c70dde9ef29f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "04d335f5-3b07-4816-87f8-852f974b6ebb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 918,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
